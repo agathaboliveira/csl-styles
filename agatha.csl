@@ -72,7 +72,7 @@
     <group delimiter=" ">
       <text term="in" suffix=" " />
       <names variable="editor">
-        <name and="text" initialize-with=". " delimiter=", " />
+        <name and="text" initialize-with=". " delimiter="" />
         <label form="short" prefix=" (" suffix=")" strip-periods="false" />
         <substitute>
           <names variable="editor" />
