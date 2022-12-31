@@ -226,7 +226,8 @@
         <group delimiter=", ">
           <text macro="title" />
           <text variable="genre" />
-          <text variable="publisher" />
+          <text macro="container" />
+          <text macro="publisher" />
           <text macro="collection" />
           <text macro="volumes" />
           <text macro="volref" />
@@ -246,8 +247,8 @@
           <text macro="volumes" />
           <text macro="collection" />
           <text macro="volref" />
-            <text macro="publisher" />
-            <text macro="date" />
+          <text macro="publisher" />
+          <text macro="date" />
           <text macro="pageref" />
         </group>
       </else-if>
