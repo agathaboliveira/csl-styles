@@ -215,7 +215,7 @@
   </macro>
   <macro name="entry-container">
     <choose>
-      <if type="report thesis manuscript encyclopedia entry-encyclopedia article" match="any">
+      <if type="report thesis manuscript encyclopedia entry-encyclopedia article article-journal" match="any">
         <group delimiter=", ">
           <text macro="title" />
           <text variable="genre" />
