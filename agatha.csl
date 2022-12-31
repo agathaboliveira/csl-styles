@@ -20,6 +20,7 @@
       <term name="translator" form="short">trans.</term>
       <term name="editortranslator" form="short">ed. and trans.</term>
       <term name="chapter" form="short">c.</term>
+      <term name="number" form="short">No.</term>
       <term name="volume" form="short">
         <single>Vol.</single>
         <multiple>vols.</multiple>
@@ -147,6 +148,12 @@
       <text term="volume" form="short" plural="true" strip-periods="true" />
     </group>
   </macro>
+  <macro name="issue">
+    <group delimiter=" ">
+      <text term="number" form="short" />
+      <text variable="issue" />
+    </group>
+  </macro>
   <macro name="pageno">
     <choose>
       <if variable="locator" match="none">
@@ -223,6 +230,7 @@
           <text macro="collection" />
           <text macro="volumes" />
           <text macro="volref" />
+          <text macro="issue" />
         </group>
         <text variable="number" prefix=" " />
         <group delimiter=", ">
