@@ -70,8 +70,8 @@
     </choose>
   </macro>
   <macro name="container-editor">
-    <group delimiter=" ">
-      <text term="in" suffix=" " />
+    <group delimiter=" " suffix=", ">
+      <text term="in" suffix=" " prefix=" " />
       <names variable="editor">
         <name and="text" initialize-with=". " delimiter="" />
         <label form="short" prefix=" (" suffix=")" strip-periods="false" />
@@ -253,9 +253,9 @@
         </group>
       </else-if>
       <else-if type="chapter paper-conference" match="any">
+        <text macro="title" />
+        <text macro="container-editor" />
         <group delimiter=", ">
-          <text macro="title" />
-          <text macro="container-editor" />
           <text macro="container" />
           <text macro="volref" />
           <text macro="volumes" />
