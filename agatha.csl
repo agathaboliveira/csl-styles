@@ -246,12 +246,8 @@
           <text macro="volumes" />
           <text macro="collection" />
           <text macro="volref" />
-        </group>
-        <group delimiter=", ">
-          <group prefix=" " suffix="" delimiter=", ">
             <text macro="publisher" />
             <text macro="date" />
-          </group>
           <text macro="pageref" />
         </group>
       </else-if>
